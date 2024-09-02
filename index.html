@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign UP form</title>
+    <title>Login form</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
@@ -11,15 +11,9 @@
     <div class="container">
         <div class="login_container">
             <div class="login_title">
-                <span>Sign UP</span>
+                <span>Login</span>
             </div>
-            <p>Create a free account </p>
-            <div class="input_wrapper">
-                <input type="email" id="mail" class="input_field" required>
-                <label for="mail" class="label">Email Address</label>
-                <i class="fa-solid fa-envelope icon"></i>
-            </div>
-
+            <p>Sign in your account</p>
             <div class="input_wrapper">
                 <input type="text" id="user" class="input_field" required>
                 <label for="user" class="label">Username</label>
@@ -32,26 +26,21 @@
                 <i class="fa-solid fa-lock icon"></i>
             </div>
 
-            
-            <div class="input_wrapper">
-                <input type="password" id="pass" class="input_field" required>
-                <label for="pass" class="label">Confirm Password</label>
-                <i class="fa-solid fa-lock icon"></i>
-            </div>
-
-            <div class="terms-conditions">
-                <div class="terms">
-                    <input type="checkbox" id="terms">
-                    <label for="terms">By signing, we assume you have read and agreed to our terms and conditions.</label>
+            <div class="remember-forgot">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember Me</label>
                 </div>
-            
+                <div class="forgot">
+                    <a href="#">Forgot Password</a>
+                </div>
             </div>
             <div class="input_wrapper">
-                <input type="submit" class="input-submit" value="Sign Up">
+                <input type="submit" class="input-submit" value="Login">
             </div>
 
             <div class="sign-up">
-                <span>Already have an account? <a href="#">Sign In</a></span>
+                <span>Don't have an account? <a href="https://loginform2-esi9.onrender.com">Sign Up</a></span>
             </div>
         </div>
     </div>
