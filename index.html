@@ -3,235 +3,189 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Net Ninja Pro - the Book</title>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <style>
     section{
+      margin-top: 0;
       padding: 60px 0;
     }
-  </style>
+    #intro {
+      background-size: cover;
+      background-image: url(assets/bg.jpg.png);
+    }
+    .txt {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    </style>
 </head>
 <body>
-
-<!-- nav-bar -->
-<nav class="navbar navbar-expand-md navbar-light">
-  <div class="container-xxl">
-    <a href="#intro" class="navbar-brand">
-      <span class="fw-bold text-secondary">
-        <i class="bi bi-book-half"></i>
-        Net Ninja Pro - the Book
+<!-- navbar -->
+<nav class="navbar navbar-expand-md navbar-light bg-secondary">
+    <div class="container-xxl">
+     <a href="#intro" class="navbar-brand">
+      <span class="fw-bold text-light fs-4">
+        Mason
       </span>
-    </a>
-    <!-- toggle button for mobile nav, bs stands for bootstrap -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"   aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+     </a>
+     
+     <!-- toggle button for mobile nav, bs stands for bootstrap -->
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"   aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- navbar links -->
-    <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#topics">About the book</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#reviews">Reviews</a>
-        </li>
-        <li class="nav-item">
-          <a href="#contact" class="nav-link">Get in Touch</a>
-        </li>
-        <li class="nav-item">
-          <a href="#pricing" class="nav-link">Pricing</a>
-        </li>
-        <li class="nav-item ms-2 d-none d-md-inline">
-          <a href="#pricing" class="btn btn-secondary">buy now</a>
-        </li>
-
-      </ul>
+        <!-- navbar links -->
+     <div class="collapse navbar-collapse justify-content-end align-center fw-bold fs-4 text-light" id="main-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Get in Touch</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
 </nav>
 
-<!-- main image & intro text -->
-<section id="intro">
-<div class="container-lg">
-  <div class="row justify-content-center align-items-center">
-    <!-- the align-items-center here means bring the text to the center of the row -->
-    <div class="col-md-5 text-center text-md-start">
-      <!-- text-center(in this code) is for smaller screens which will display the text at center on smaller screen while text-md-start is for medium screens and upwards it will start the text at the left i.e the beginning.   -->
-      <h1>
-        <div class="display-2">Black-Belt</div>
-        <div class="display-5 text-muted">Your Coding Skills</div>
-      </h1>
-      <p class="lead my-4 text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-      <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
-      <!-- open sidebar / offcanvas -->
-      <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
-        Explore my other books
-      </a>
-    </div>
-    <div class="col-md-5 text-center d-none d-md-block">
-      <!-- img-fluid= it makes it 100% width of the parent element(the div) which was specify to be 5. md= medium breaking point md-5= medium screen take up 5 column space in width d= display. d-none= display none byu default on smaller screens d-md= that means display as block when you get to medium size screens and upwards -->
-      <!-- tooltip -->
-      <span class="tt" data-bs-placement="bottom" title="Net Ninja Book Cover">
-        <img class="img-fluid" src="assets/ebook-cover.png" alt="ebook-cover">  
-      </span>
-      </div>
-  </div>
-</div>
-</section>
 
-<!-- pricing plan -->
-<section id="pricing" class="bg-light mt-5">
-<div class="container-lg">
-  <div class="text-center">
-    <h2>Pricing Plans</h2>
-    <p class="lead text-muted">Choose a pricing plan to suit you</p>
-  </div>
+<!-- intro -->
 
-  <div class="row my-5 align-items-center justify-content-center">
-    <div class="col-8 col-lg-4 col-xl-3">
-      <!-- col-8 means for extra small screens is going to be 8 columns in width which is kinda like a default width col-lg-4 means when you get to large screens it will be 4 columns in width col-xl-3 means when you get to extra large screens it will be 3 columns in width-->
-      <div class="card border-0">
-        <div class="card-body text-center py-4">
-          <h4 class="card-title">Starter Edition</h4>
-          <p class="lead card-subtitle">ebook download only</p>
-          <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
-          <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, numquam.</p>
-          <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+<section id="intro" class="min-vh-100 d-flex align-items-center text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-uppercase text-light fw-semibold display-3 mb-3">Welcome to my portfolio</h1>
+        <h4 class="text-muted text-light mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, dolore ut rem numquam beatae consequuntur?</h4>
+        <div class="btn">
+          <a href="#" class="btn btn-outline-secondary btn-lg btn-brand text-light fw-bold">Get Started</a>
+          <a href="#contact us" class="btn btn-outline-primary btn-lg text-light fw-bold">Contact us</a>
         </div>
       </div>
     </div>
-
-    <div class="col-9 col-lg-4">
-      <div class="card border-primary border-2">
-        <div class="card-header text-center text-primary">Most Popular</div>
-        <div class="card-body text-center py-5">
-          <h4 class="card-title">Complete Edition</h4>
-          <p class="lead card-subtitle">ebook download & all updates</p>
-          <p class="display-4 my-4 text-primary fw-bold">$18.99</p>
-          <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aliquam.</p>
-          <a href="#" class="btn btn-outline-primary btn-lg mt-3">
-            Buy Now
-          </a>
-        </div>
-      </div>
-    </div>
-
-<div class="col-8 col-lg-4 col-xl-3">
-  <div class="card border-0">
-    <div class="card-body text-center py-4">
-      <h4 class="card-title">Premium Edition</h4>
-      <p class="lead card-subtitle">download, updates & extras</p>
-      <p class="display-5 my-4 text-primary fw-bold">$24.99</p>
-      <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, ullam.</p>
-      <a href="#" class="btn btn-outline-primary btn-lg mt-3">
-        Buy Now
-      </a>
-    </div>
   </div>
-</div>
-
-  </div>
-
-</div>
 </section>
 
 
-<!-- topics at a glance -->
-<section id="topics">
-  <div class="container-md">
+<!-- services -->
+
+<section class="bg-light my-3 mt-3" id="services">
+  <div class="container-lg">
     <div class="text-center">
-      <h2>Inside the book...</h2>
-      <p class="lead text-muted">A quick glance at the topics you'll learn</p>
-    </div>
-    <div class="row my-5 g-5 justify-content-around align-items-center">
-      <div class="col-6 col-lg-4">
-        <img src="assets/kindle.png" class="img-fluid" alt="ebook">
-      </div>
-        <div class="col-lg-6">
-      <!-- accordion -->
-      <div class="accordion" id="chapters">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="heading-1">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
-              chapter 1 - Your First Web Page
-            </button>
-          </h2>
-          <div class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#chapters" id="chapter-1">
-            <div class="accordion-body">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, debitis, consectetur quidem ut quam in tempore odit omnis fugit vel reiciendis fugiat, repellat eos accusantium nihil! Dicta mollitia maxime adipisci.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio quia vitae sequi velit ducimus laborum repellendus eum iure minus.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="heading-2">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-2" aria-expanded="true" aria-controls="chapter-2">
-              chapter 2 - Mastering CSS
-            </button>
-          </h2>
-          <div class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#chapters" id="chapter-2">
-            <div class="accordion-body">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, debitis, consectetur quidem ut quam in tempore odit omnis fugit vel reiciendis fugiat, repellat eos accusantium nihil! Dicta mollitia maxime adipisci.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio quia vitae sequi velit ducimus laborum repellendus eum iure minus.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="heading-3">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-3" aria-expanded="true" aria-controls="chapter-3">
-              chapter 3 - The Power Of JavaScript
-            </button>
-          </h2>
-          <div class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#chapters" id="chapter-3">
-            <div class="accordion-body">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, debitis, consectetur quidem ut quam in tempore odit omnis fugit vel reiciendis fugiat, repellat eos accusantium nihil! Dicta mollitia maxime adipisci.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio quia vitae sequi velit ducimus laborum repellendus eum iure minus.</p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="heading-4">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-4" aria-expanded="true" aria-controls="chapter-4">
-              chapter 4 - Storing Data (Firebase Databases)
-            </button>
-          </h2>
-          <div class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#chapters" id="chapter-4">
-            <div class="accordion-body">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, debitis, consectetur quidem ut quam in tempore odit omnis fugit vel reiciendis fugiat, repellat eos accusantium nihil! Dicta mollitia maxime adipisci.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio quia vitae sequi velit ducimus laborum repellendus eum iure minus.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="heading-5">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-5" aria-expanded="true" aria-controls="chapter-5">
-              chapter 5 - User Authentication
-            </button>
-          </h2>
-          <div class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="#chapters" id="chapter-5">
-            <div class="accordion-body">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, debitis, consectetur quidem ut quam in tempore odit omnis fugit vel reiciendis fugiat, repellat eos accusantium nihil! Dicta mollitia maxime adipisci.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio quia vitae sequi velit ducimus laborum repellendus eum iure minus.</p>
-            </div>
-          </div>
-        </div>
-       </div>
+      <div class="txt">
+      <h1 class="lead display-5 mb-3">Services we provide</h1>
+      <p class="text-muted ">We create fully customized websites tailored to your business needs, ensuring your brand's online presence is professional, user-friendly, and optimized for conversion. </p>
+      <p class="text-start ms-0 mb-3">Some of what we can provide are shown below </p>
       </div>
     </div>
+
+    <div class="row  align-items-center justify-content-center">
+      <div class="col-8 col-lg-4 col-xl-3">
+        <div class="card border-2 border-primary mb-3">
+          <div class="card-header">Exhibit A </div>
+            <div class="card-body text-center text-primary">
+              <h5 class="card-title">Camping gears</h5>
+              <p class="card-text">This webpage is about Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad debitis assumenda tempore optio obcaecati nam!</p>
+              <a href="https://campinggear.onrender.com" class="btn btn-outline-primary btn-lg mt-3">View</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-8 col-lg-4 col-xl-3">
+      <div class="card border-2 border-primary mb-3">
+        <div class="card-header">Exhibit B </div>
+          <div class="card-body text-center text-primary">
+            <h5 class="card-title">Ebook webpage</h5>
+            <p class="card-text">This webpage is about Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad debitis assumenda tempore optio obcaecati nam!</p>
+            <a href="https://ebook-cvil.onrender.com" class="btn btn-outline-primary btn-lg mt-3">View</a>
+          </div>
+      </div>
+  </div>
+
+  <div class="col-8 col-lg-4 col-xl-3">
+    <div class="card border-2 border-primary mb-3">
+      <div class="card-header">Exhibit C </div>
+        <div class="card-body text-center text-primary">
+          <h5 class="card-title">First webpage</h5>
+          <p class="card-text">This webpage is about Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad debitis assumenda tempore optio obcaecati nam!</p>
+          <a href="https://project6k.onrender.com" class="btn btn-outline-primary btn-lg mt-3">View</a>
+        </div>
+    </div>
+</div>  
+<a href="#" class="text-center fw-bold">view more</a>
   </div>
 </section>
 
-<!-- reviews list -->
+
+<!-- about us -->
+
+<section id="about">
+  <div class="text-center mb-4 fw-bold">
+    <div class="about-1">
+      <h2>ABOUT US</h2>
+      <p class="lead text-center p-3 text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A dicta ducimus ab quos, sit ex sunt. Adipisci vitae cupiditate possimus dolorem saepe mollitia! Vitae fuga necessitatibus unde deleniti, ipsa veritatis consectetur reprehenderit rem non reiciendis maxime laborum aliquid modi nesciunt? Fugit, mollitia illo architecto distinctio ratione suscipit possimus laborum quidem!</p>
+    </div>
+    </div> 
+
+    <div class="about-2">
+      <div class="content-box-lg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="about-item mb-2 mt-2 text-center">
+                <i class="fa fa-book"></i>
+                <h3>MISSION</h3>
+                <hr>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores asperiores fuga cum ex blanditiis earum?</P>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="about-item mb-2 mt-2 text-center">
+                <i class="fa fa-globe"></i>
+                <h3>VISION</h3>
+                <hr>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores asperiores fuga cum ex blanditiis earum?</P>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="about-item mb-2 mt-2 text-center">
+                <i class="fa fa-pencil"></i>
+                <h3>ACHIEVEMENTS</h3>
+                <hr>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores asperiores fuga cum ex blanditiis earum?</P>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- reviews -->
+
 <section class="bg-light" id="reviews">
   <div class="container-lg">
     <div class="text-center">
-      <h2><i class="bi bi-stars"></i> Book Reviews</h2>
-      <p class="lead">What my students have said about the book... </p>
+      <h2><i class="bi bi-stars"></i>Reviews</h2>
+      <p class="lead">What my previous clients have to say... </p>
     </div>
 
     <div class="row justify-content-center my-5">
@@ -245,9 +199,9 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
             </div>
-            <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+            <h5 class="mb-1">Amazing web dev</h5>
             <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, officiis quam voluptatum assumenda, laudantium obcaecati inventore delectus voluptas soluta fugit architecto unde qui mollitia alias porro, a exercitationem distinctio impedit rerum similique repellat expedita. Exercitationem?</p>
-            <small>Review by Mason</small>
+            <small>Review by SMD</small>
           </div>
 
           <div class="list-group-item py-3">
@@ -258,9 +212,9 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
             </div>
-            <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+            <h5 class="mb-1">Amazing web dev</h5>
             <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, officiis quam voluptatum assumenda, laudantium obcaecati inventore delectus voluptas soluta fugit architecto unde qui mollitia alias porro, a exercitationem distinctio impedit rerum similique repellat expedita. Exercitationem?</p>
-            <small>Review by Mason</small>
+            <small>Review by John</small>
           </div>
 
           <div class="list-group-item py-3">
@@ -271,22 +225,9 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
             </div>
-            <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+            <h5 class="mb-1">Amazing web dev</h5>
             <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, officiis quam voluptatum assumenda, laudantium obcaecati inventore delectus voluptas soluta fugit architecto unde qui mollitia alias porro, a exercitationem distinctio impedit rerum similique repellat expedita. Exercitationem?</p>
-            <small>Review by Mason</small>
-          </div>
-
-          <div class="list-group-item py-3">
-            <div class="pb-2">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </div>
-            <h5 class="mb-1">A must buy for every aspiring web dev</h5>
-            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, officiis quam voluptatum assumenda, laudantium obcaecati inventore delectus voluptas soluta fugit architecto unde qui mollitia alias porro, a exercitationem distinctio impedit rerum similique repellat expedita. Exercitationem?</p>
-            <small>Review by Mason</small>
+            <small>Review by Glory</small>
           </div>
 
           <div class="list-group-item py-3">
@@ -297,9 +238,22 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-half"></i>
             </div>
-            <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+            <h5 class="mb-1">Amazing web dev</h5>
             <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, officiis quam voluptatum assumenda, laudantium obcaecati inventore delectus voluptas soluta fugit architecto unde qui mollitia alias porro, a exercitationem distinctio impedit rerum similique repellat expedita. Exercitationem?</p>
-            <small>Review by Mason</small>
+            <small>Review by Michael</small>
+          </div>
+
+          <div class="list-group-item py-3">
+            <div class="pb-2">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <h5 class="mb-1">Amazing web dev</h5>
+            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, officiis quam voluptatum assumenda, laudantium obcaecati inventore delectus voluptas soluta fugit architecto unde qui mollitia alias porro, a exercitationem distinctio impedit rerum similique repellat expedita. Exercitationem?</p>
+            <small>Review by Samuel</small>
           </div>
         </div>
       </div>
@@ -308,17 +262,51 @@
 </section>
 
 
+<!-- contact us -->
 
-<!-- Contact Form -->
-<!-- form-control form-label form-select form-group input-group-text -->
 <section id="contact">
-  <div class="containter-lg">
+  <div class="container-lg">
     <div class="text-center">
-      <h2>Get in Touch</h2>
-      <p class="lead">Questions to ask? Fill out the form to contact me directly...</p>
+      <h2 class="lead display-3">Contact Us</h2>
+      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est neque distinctio adipisci delectus libero cum. Maiores, rem eius.</p>
     </div>
-
-    <div class="row justify-content-center my-5">
+        <div class="contact-details text-muted  align-items-start">
+          <span class="d-block">
+          <i class="fas fa-map-marker-alt"></i>
+          12p Campsite Avenue, Wilderness, CA-98765
+          </span>
+          <span class="d-block">
+          <i class="fas fa-envelope"></i>
+          info@campinggearexperts.com
+        </span>
+        <span class="d-block">
+          <i class="fas fa-phone"></i>
+          +234 916-1476529
+        </span>
+        <span class="d-block">        
+          <i class="fas fa-clock"></i>
+          Monday - Friday: 9:00 AM - 6:00 PM
+        </span>
+        <span class="d-block">
+          <i class="fas fa-clock"></i>
+          Saturday: 10:00 AM - 3:00 PM
+        </span>
+        <span class="d-block">
+          <i class="fas fa-clock"></i>
+          Saturday: 10:00 AM - 3:00 PM 
+        </span>
+        <span class="d-block">
+          <i class="fas fa-clock"></i>
+          Sunday: 12:00 PM - 4:00 PM 
+        </span>
+        <span class="d-block">
+          <i class="fas fa-globe"></i>
+          www.codingwithmasonweb.com
+          </span>      
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-5 ">
       <div class="col-lg-6">
         <form>
           <label for="email" class="form-label">Email address:</label>
@@ -327,12 +315,6 @@
               <i class="bi bi-envelope-fill"></i>
             </span>
             <input type="email" class="form-control" id="email" placeholder="e.g.mason@example.com">
-            <!-- tooltip -->
-            <span class="input-group-text">
-              <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
-              <i class="bi bi-question-circle text-muted"></i>
-              </span>
-            </span>
           </div>
 
           <label for="name" class="form-label">Name:</label>
@@ -341,104 +323,23 @@
               <i class="bi bi-person-fill"></i>
             </span>
             <input type="text" class="form-control" id="name" placeholder="e.g. Mason">
-            <!-- tooltip -->
-            <span class="input-group-text">
-              <span class="tt" data-bs-placement="bottom" title="self explanatory...">
-              <i class="bi bi-question-circle text-muted"></i>
-              </span>
-            </span>
-          </div>
-         
-
-          <label for="subject" class="form-label">What is your question about?</label>
-          <div class="mb-4 input-group">
-            <span class="input-group-text">
-              <i class="bi bi-chat-left-dots-fill"></i>
-            </span>
-            <select id="subject" class="form-select">
-              <option value="pricing" selected>Pricing query</option>
-              <option value="content">Content query</option>
-              <option value="other">Other query</option>
-            </select>
-          </div>
-          
-
-          <div class="form-floating mb-4 mt-5">
-            <textarea class="form-control" id="query" style="height: 140px;"></textarea>
-             <label for="qery" >Your query...</label>
           </div>
 
-          <div class="mb-4 text-center">
-            <button type="submit" class="btn btn-secondary">Submit</button>
-          </div>
-        </form>
+            <div class="form-floating mb-4 mt-5">
+              <textarea class="form-control" id="text" style="height: 140px;"></textarea>
+               <label for="qery" >Your message...</label>
+            </div>
+  
+            <div class="mb-4 text-center">
+              <button type="submit" class="btn btn-secondary">Submit</button>
+            </div>
+          </form>
       </div>
     </div>
   </div>
 </section>
 
 
-<!--  get updates / modal trigger -->
-<section class="bg-light">
-  <div class="container">
-    <div class="text-center">
-      <h2>Stay in the loop</h2>
-      <p class="lead">Get the latest updates as they happen...</p>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col md-8 text-center">
-        <p class="text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, esse nesciunt id officia ut ullam repellat dicta beatae magnam itaque aperiam autem repellendus magni! Reiciendis voluptates consequuntur adipisci dolor, dicta officia in ullam eos, iste inventore sequi excepturi obcaecati nihil impedit quisquam architecto iure veniam?</p>
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
-          Register for updates
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- modal itself -->
-<div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modal-title">Get the latest Updates</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae animi eveniet libero suscipit odio, dolore unde soluta laborum, tenetur repellat vitae, porro magnam est laboriosam modi optio illum voluptas! Sapiente!</p>
-        <label for="modal-email" class="form-label">Your email address:</label>
-        <input type="email" class="form-control" id="modal-email" placeholder="e.g. mason@example.com">
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary">Submit</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- offcanvas -->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci odio ullam explicabo iure illo voluptatum earum assumenda inventore suscipit vitae perspiciatis aspernatur maiores laudantium expedita temporibus, quo sint eos dignissimos.</p>
-<!-- dropdrown -->
-<div class="dropdown mt-3">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown">
-    Choose a book title
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="book-dropdown">
-    <li><a href="#" class="dropdown-item">Become a React superhero</a></li>
-    <li><a href="#" class="dropdown-item">Conquering Vue.js</a></li>
-    <li><a href="#" class="dropdown-item">Levelling up your Next.js</a></li>
-  </ul>
-</div>
-
-  </div>
-</div>
 
 
 
@@ -448,12 +349,15 @@
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  <script>
-    const tooltips = document.querySelectorAll('.tt')
-    tooltips.forEach(t => {
-      new bootstrap.Tooltip(t)
-    })
-  </script>
+
+
+
+
+
+<footer class="text-center">
+  <p class="text-muted">copyright &copy; 2021 All rights reserved</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script>
 </body>
 </html>
